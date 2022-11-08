@@ -5,7 +5,7 @@ import personnages.Humain;
 public class Commercant extends Humain {
 
 	public Commercant(String nom, int argent) {
-		super(nom, argent, null);
+		super(nom, argent, "thé");
 	}
 	
 	public int seFaireExtorquer() {
@@ -16,5 +16,6 @@ public class Commercant extends Humain {
 	
 	public void recevoir(int argent) {
 		this.gagnerArgent(argent);
+		super.parler("Merci seigneur merci");
 	}
 }

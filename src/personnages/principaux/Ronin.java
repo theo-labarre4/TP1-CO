@@ -13,6 +13,7 @@ public class Ronin extends Humain {
 	
 	public void donner(int montant, Commercant commercant) {
 		this.perdreArgent(montant);
+		super.parler("Tiens le gueux voila " +montant+ " sous");
 		commercant.recevoir(montant);
 	}
 	

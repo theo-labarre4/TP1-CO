@@ -37,6 +37,7 @@ public class Yakuza extends Humain {
 		reputation--;
 		int argentPerdu = this.getArgent();
 		this.perdreArgent(argentPerdu);
+		super.parler("J'ai perdu mon duel et mes " +argentPerdu+ " sous...");
 		return argentPerdu;
 	}
 	
